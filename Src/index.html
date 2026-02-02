@@ -1,13 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Proyecto de Grupo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto de Grupo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+      color: #333;
+    }
+    header {
+      background-color: rgba(0,0,0,0.6);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 15px 0;
+    }
+    .cambio {
+      font-weight: bold;
+      color: #2c3e50;
+      background: #f1c40f;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    footer {
+      background-color: rgba(0,0,0,0.6);
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-<h1>Bienvenidos al Proyecto de Grupo</h1>
-<p>Esta es una página de ejemplo para el laboratorio de Git.</p>
-<p>Colaborador: [Nombre]</p>
+  <header>
+    <h1>✨ Bienvenidos al Proyecto de Grupo ✨</h1>
+  </header>
+  <main>
+    <p>Esta es una página de ejemplo para el laboratorio de Git.</p>
+    <p>Colaborador: <strong>[Nombre]</strong></p>
+    <p class="cambio">Hola, hice un cambio 🚀</p>
+    <p id="mensaje"></p>
+  </main>
+  <footer>
+    <p>&copy; 2026 Proyecto de Grupo - Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    // Pequeño script para mostrar un saludo dinámico
+    const mensaje = document.getElementById('mensaje');
+    const hora = new Date().getHours();
+    if(hora < 12){
+      mensaje.textContent = "Buenos días, equipo 👋";
+    } else if(hora < 18){
+      mensaje.textContent = "Buenas tardes, sigamos trabajando 💻";
+    } else {
+      mensaje.textContent = "Buenas noches, gran trabajo hoy 🌙";
+    }
+  </script>
 </body>
 </html>
