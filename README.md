@@ -29,21 +29,6 @@ Puedes encontrar el repositorio en el siguiente enlace:
 
 ## Estructura de Carpetas
 
-A continuación se muestra la estructura de carpetas y archivos del proyecto. Esto ayuda a entender la organización del código y los recursos.
+A continuación se muestra la estructura de carpetas y archivos del proyecto.
+<img width="907" height="166" alt="image" src="https://github.com/user-attachments/assets/ab814c80-e124-4e8d-9c35-f0e436866873" />
 
-lab_Desarrollo_soft/
-|-- README.md
-|-- config
-|   -- Hola\ mundo.txt
-|-- docs
-|   -- documentacion.txt
-|-- index.html
-|-- test
-|   -- test.txt
-`-- tests
-    -- test.txt
-
-
-4.  *Copia la salida que te genere ese comando y pégala en el README*, reemplazando el ejemplo que te puse. ¡Así estará 100% actualizado!
-
-Si necesitas algún otro ajuste o tienes la salida del comando para que la integre, ¡dime sin problema! Quedo a tu disposición.
